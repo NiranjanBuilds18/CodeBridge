@@ -1,0 +1,8 @@
+{
+  "name": "CodeBridge",
+  "description": "Instant, zero-login code and file transfer from phone to laptop via QR pairing with real-time WebSockets and memory-only temporary sessions.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}

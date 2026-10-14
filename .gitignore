@@ -1,0 +1,16 @@
+```gitignore
+node_modules/
+build/
+dist/
+coverage/
+.DS_Store
+*.log
+
+# Environment secrets
+.env*
+!.env.example
+
+# Local room/session data and uploaded files
+data/rooms.json
+data/items/
+```

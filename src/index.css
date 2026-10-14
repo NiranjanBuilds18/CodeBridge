@@ -1,0 +1,156 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --bg-base: #FAFAF7;
+    --bg-surface: #FFFFFF;
+    --bg-subtle: #F3F3EE;
+    --bg-hover: #ECECE6;
+    --border-subtle: #E6E6E1;
+    --border-strong: #D3D3CB;
+    --text-primary: #111213;
+    --text-secondary: #52534F;
+    --text-muted: #7E8079;
+    --accent-green: #1E4D36;
+    --accent-green-hover: #163B29;
+    --accent-green-subtle: #EBF3EF;
+    --accent-amber: #B45309;
+  }
+
+  .dark {
+    --bg-base: #111213;
+    --bg-surface: #18191A;
+    --bg-subtle: #212224;
+    --bg-hover: #2B2C2F;
+    --border-subtle: #2B2C2E;
+    --border-strong: #3D3E42;
+    --text-primary: #EDEDEA;
+    --text-secondary: #B1B2AC;
+    --text-muted: #767771;
+    --accent-green: #3B8563;
+    --accent-green-hover: #489F77;
+    --accent-green-subtle: #172D23;
+    --accent-amber: #F59E0B;
+  }
+
+  body {
+    background-color: var(--bg-base);
+    color: var(--text-primary);
+    font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  code, pre, .font-mono {
+    font-family: 'JetBrains Mono', ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+    font-variant-numeric: tabular-nums;
+  }
+}
+
+/* Precise hairline borders & focus states */
+input, textarea, select, button {
+  font-family: inherit;
+}
+
+/* Subtle scrollbars */
+::-webkit-scrollbar {
+  width: 5px;
+  height: 5px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(0, 0, 0, 0.12);
+  border-radius: 2px;
+}
+
+.dark ::-webkit-scrollbar-thumb {
+  background: rgba(255, 255, 255, 0.15);
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(0, 0, 0, 0.22);
+}
+
+.dark ::-webkit-scrollbar-thumb:hover {
+  background: rgba(255, 255, 255, 0.25);
+}
+
+/* Syntax Highlighting Colors for Prism */
+.token.comment,
+.token.prolog,
+.token.doctype,
+.token.cdata {
+  color: #7E8079;
+  font-style: italic;
+}
+
+.token.punctuation {
+  color: #636460;
+}
+
+.dark .token.punctuation {
+  color: #9C9D98;
+}
+
+.token.property,
+.token.tag,
+.token.boolean,
+.token.number,
+.token.constant,
+.token.symbol {
+  color: #B45309;
+}
+
+.token.selector,
+.token.attr-name,
+.token.string,
+.token.char,
+.token.builtin {
+  color: #1E4D36;
+}
+
+.dark .token.selector,
+.dark .token.attr-name,
+.dark .token.string,
+.dark .token.char,
+.dark .token.builtin {
+  color: #489F77;
+}
+
+.token.operator,
+.token.entity,
+.token.url {
+  color: #8D5B00;
+}
+
+.token.atrule,
+.token.attr-value,
+.token.keyword {
+  color: #9A3412;
+}
+
+.dark .token.atrule,
+.dark .token.attr-value,
+.dark .token.keyword {
+  color: #FB923C;
+}
+
+.token.function,
+.token.class-name {
+  color: #1A3E72;
+}
+
+.dark .token.function,
+.dark .token.class-name {
+  color: #60A5FA;
+}
+
+.token.regex,
+.token.important,
+.token.variable {
+  color: #B45309;
+}
